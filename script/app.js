@@ -45,5 +45,7 @@ shortUrlBtn.addEventListener("click", (event) => {
 				getQr(response.result_url);
 			}
 		});
-	qrcode.removeChild(qrcode.lastChild);
+	if (qrcode.children.length > 1) {
+		qrcode.removeChild(qrcode.lastChild);
+	}
 });
