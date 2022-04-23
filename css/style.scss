@@ -1,4 +1,4 @@
-$primaryColor: #6a5acd;
+$primaryColor: #1e90ff;
 $darkColor: #202020;
 $lightColor: #f0f0f0;
 
@@ -6,11 +6,12 @@ $lightColor: #f0f0f0;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: $lightColor;
+	font-family: "Karla", sans-serif;
 }
 
 body {
-	background: $darkColor;
+	background: $lightColor;
+	color: $darkColor;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -24,6 +25,9 @@ main {
 
 form {
 	margin-bottom: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	#longUrl {
 		margin-right: 0.5rem;
 		padding: 10px;
@@ -33,8 +37,8 @@ form {
 	#shortUrlBtn {
 		appearance: none;
 		border: none;
-		padding: 11px 15px;
-		background: $primaryColor;
+		padding: 10px 15px;
+		background: #1e90ff;
 		color: $lightColor;
 		font-size: 1rem;
 		cursor: pointer;
