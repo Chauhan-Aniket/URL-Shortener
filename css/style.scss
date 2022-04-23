@@ -27,12 +27,13 @@ main {
 form {
 	margin-bottom: 2rem;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
 	#longUrl {
-		margin-right: 0.5rem;
+		margin-bottom: 1rem;
 		padding: 10px;
-		width: 300px;
+		width: 100%;
 	}
 
 	#shortUrlBtn {
@@ -46,12 +47,6 @@ form {
 	}
 
 	@media screen and (max-width: 540px) {
-		flex-wrap: wrap;
-		#longUrl {
-			margin: 0;
-			margin-bottom: 1rem;
-			width: 100%;
-		}
 		#shortUrlBtn {
 			width: 100%;
 		}
