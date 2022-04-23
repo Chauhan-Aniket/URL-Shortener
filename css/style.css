@@ -24,6 +24,7 @@ body {
 main {
   padding: 10px;
   height: 50vh;
+  width: 360px;
 }
 
 form {
