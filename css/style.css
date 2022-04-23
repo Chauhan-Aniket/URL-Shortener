@@ -42,7 +42,7 @@ form {
 form #longUrl {
   margin-right: 0.5rem;
   padding: 10px;
-  width: 20vw;
+  width: 300px;
 }
 
 form #shortUrlBtn {
@@ -55,6 +55,21 @@ form #shortUrlBtn {
   color: #f0f0f0;
   font-size: 1rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+  form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  form #longUrl {
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  form #shortUrlBtn {
+    width: 100%;
+  }
 }
 
 #shortedUrl {

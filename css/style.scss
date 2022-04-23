@@ -31,7 +31,7 @@ form {
 	#longUrl {
 		margin-right: 0.5rem;
 		padding: 10px;
-		width: 20vw;
+		width: 300px;
 	}
 
 	#shortUrlBtn {
@@ -42,6 +42,18 @@ form {
 		color: $lightColor;
 		font-size: 1rem;
 		cursor: pointer;
+	}
+
+	@media screen and (max-width: 540px) {
+		flex-wrap: wrap;
+		#longUrl {
+			margin: 0;
+			margin-bottom: 1rem;
+			width: 100%;
+		}
+		#shortUrlBtn {
+			width: 100%;
+		}
 	}
 }
 #shortedUrl {
