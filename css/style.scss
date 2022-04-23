@@ -1,6 +1,53 @@
+$primaryColor: #6a5acd;
 $darkColor: #202020;
 $lightColor: #f0f0f0;
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $lightColor;
+}
+
 body {
 	background: $darkColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+main {
+	padding: 10px;
+	height: 50vh;
+}
+
+form {
+	margin-bottom: 2rem;
+	#longUrl {
+		margin-right: 0.5rem;
+		padding: 10px;
+		width: 20vw;
+	}
+
+	#shortUrlBtn {
+		appearance: none;
+		border: none;
+		padding: 11px 15px;
+		background: $primaryColor;
+		color: $lightColor;
+		font-size: 1rem;
+		cursor: pointer;
+	}
+}
+#shortedUrl {
+	margin-bottom: 2rem;
+	text-align: center;
+	a {
+		color: $primaryColor;
+	}
+}
+#qrcode {
+	display: grid;
+	place-items: center;
 }
